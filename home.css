@@ -28,13 +28,19 @@ header {
     font-size: 24px;
     font-weight: bold;
     padding: 30px;
+    background-image: linear-gradient(0deg, rgb(202, 28, 28) 22%, rgba(253,187,45,1) 100%);
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
 }
 .navbar ul li {
     margin: 0 15px;
 }
 
 .navbar ul li a {
-    color: white;
+    background-image: linear-gradient(148deg, rgba(255,255,255,1) 0%, rgba(162,153,134,1) 100%);
+    background-clip: text;
+    color: transparent;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
