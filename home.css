@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: "Iberpangea", sans-serif;
+    background-color: #1d811485;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+         /* barra de navegação */
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px;
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #fa2a05;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+  
+
+        /* explicação das queimadas */
+ 
+.titulo{
+    padding: 20px;
+    margin-left : 15% ;
+    margin-top: 3%;
+    font-size: larger;
+    color: #333;
+}
+
+p{
+    margin-bottom: 20px;
+    font-size: 115%;
+
+}
+
+.paragrafo{
+    margin-left: 17%; 
+    margin-right: auto; 
+    max-width: 800px; 
+    width: 90%; 
+    padding: 1em; 
+}
+
+.exp li {
+    margin-left: 21%;
+    font-family:"Iberpangea", sans-serif;
+    margin-bottom: 22px;
+}
+
+        /* mostrador das imagens das queimadas */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin: 20px auto;
+    max-width: 1200px; 
+}
+        
+.exemplo{
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+        
+.exemplo h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+        
+.exemplo img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+        
+.exemplo img:hover {
+    transform: scale(1.05);
+}
+
+/* responsividade */
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        display: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+   .menu {
+        display: block;
+    }
+
+
+    .banner img {
+    height: auto; 
+    }
+    .titulo {
+        margin-left: 5%; 
+        margin-right: 5%; 
+        font-size: 120%; 
+    }
+
+    .paragrafo, 
+    .exp li {
+        margin-left: 5%; 
+        margin-right: 5%; 
+    }
+
+    p {
+        font-size: 100%; 
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exemplo img {
+        max-width: 90%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 10px;
+    }
+    titulo {
+        font-size: 110%;
+    }
+
+    p {
+        font-size: 95%; 
+    }
+
+    .paragrafo, 
+    .exp li {
+        margin-left: 3%; 
+        margin-right: 3%;
+    }
+
+    .exemplo h2 {
+        font-size: 18px;
+    }
+
+    .exemplo img {
+        max-width: 100%; 
+    }
+
+}
