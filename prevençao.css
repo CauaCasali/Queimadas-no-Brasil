@@ -8,7 +8,7 @@
 body {
     font-family: "Iberpangea", sans-serif;
     background: rgb(247, 246, 246); 
-    background: linear-gradient(357deg, rgba(255,0,0,0.7259278711484594) 2%, rgba(255,205,0,0.865983893557423) 100%);
+    background:linear-gradient(357deg, rgba(0,144,0,0.8155637254901961) 2%, rgba(255,205,0,0.8323704481792717) 100%);
     margin: 0; 
     padding: 0; 
     min-height: 100vh; 
@@ -64,30 +64,29 @@ header {
     top: 20px;
 }
 
+        /* banner da pagina */
+
 .banner img {
     width: 100%;
     height: auto;
 }
 
-/* explicação */
+        /* informaçoes sobre prevençao */
 
 .titulo{
     padding: 20px;
     margin-left : 15% ;
-    margin-top: 3%;
-    font-size: 20px;
+    margin-top: 2%;
+    font-size: larger;
     color: #000000;
-    margin-right: auto; 
-    max-width: 800px; 
-    width: 90%; 
-    padding: 1em;
-    }
+}
 
 p{
     margin-bottom: 20px;
     font-size: 115%;
+
 }
-    
+
 .paragrafo{
     margin-left: 17%; 
     margin-right: auto; 
@@ -96,49 +95,26 @@ p{
     padding: 1em; 
 }
 
-        /* grafico representando o aumento de focos de queimadas\[que negocio difícil, credo] */
-
-.contGrafico { 
+.infografico img {
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    height: auto;
+    max-width: 750px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 0 auto; 
+    display: block; 
 }
 
-.barra {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
+.descriçao {
+    margin: 0 auto; 
+    max-width: 800px; 
+    width: 90%; 
+    padding: 0em; 
+    font-weight: bolder;
+    text-align: center; 
 }
 
-        /* Bara do rotulo */
-
-.rotBarra {   
-    width: 150px;
-    text-align: right;
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-    /* valor da barra */
-
-.valorBarra{
-    height: 30px;
-    background-color: #1f8a92;
-    color: white;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 5px;
-}
-
-.barra-100 { width: 10%; }
-.barra-200 { width: 20%; }
-.barra-260 { width: 26%; }
-.barra-3316 { width: 80%; } 
-.barra-50 { width: 5%; }
-
-
-/* responsividade */
+        /* responsividade */
 
 @media (max-width: 768px) {
     .navbar ul {
@@ -167,6 +143,7 @@ p{
     .banner img {
     height: auto; 
     }
+
     .titulo {
         margin-left: 5%; 
         margin-right: 5%; 
@@ -182,22 +159,11 @@ p{
         font-size: 100%; 
     }
 
-    .rotBarra {
-        width: 120px;
-        font-size: 14px;
+    .descricao {
+        margin-left: 5%; 
+        margin-right: 5%;
     }
-
-    .barraValor {
-        font-size: 12px;
-    }
-
-    .barra-100 { width: 10%; }
-    .barra-200 { width: 20%; }
-    .barra-260 { width: 26%; }
-    .barra-3316 { width: 90%; }
-    .barra-50 { width: 5%; }
-    
-
+}
 
 @media (max-width: 480px) {
     .navbar ul li a {
@@ -219,24 +185,11 @@ p{
         font-size: 95%; 
     }
 
-    .paragrafo{
+    .paragrafo {
         margin-left: 3%; 
         margin-right: 3%;
     }
-
-    .rotBarra {
-        width: 100px;
-        font-size: 12px;
+    .descricao {
+        width: 95%;
     }
-
-    .barraValor {
-        font-size: 10px;
-    }
-
-    .barra-100 { width: 10%; }
-    .barra-200 { width: 20%; }
-    .barra-260 { width: 26%; }
-    .barra-3316 { width: 70%; }
-    .barra-50 { width: 5%; }
-}
 }
