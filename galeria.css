@@ -112,7 +112,8 @@ p{
     box-sizing: border-box;
   }
   
-  .galeriaFotos .fotos img {
+  .galeriaFotos 
+  .fotos img {
     width: 80%;
     height: auto;
     border-radius: 8px;

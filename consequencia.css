@@ -96,8 +96,8 @@ p{
     padding: 1em; 
 }
 
-        /* grafico representando o aumento de focos de queimadas\[que negocio difícil, credo], baseado em estatisticas reais
-        na fonte do G1 mediante aos tempos hodiernos */
+     /* grafico representando o aumento de focos de queimadas\[que negocio difícil, credo], baseado em estatisticas reais
+    na fonte do G1 mediante aos tempos hodiernos */
 
 .contGrafico { 
     width: 100%;
@@ -166,8 +166,9 @@ p{
 
 
     .banner img {
-    height: auto; 
+        height: auto; 
     }
+
     .titulo {
         margin-left: 5%; 
         margin-right: 5%; 
@@ -239,5 +240,5 @@ p{
     .barra-260 { width: 26%; }
     .barra-3316 { width: 70%; }
     .barra-50 { width: 5%; }
-}
+    }
 }

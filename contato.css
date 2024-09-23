@@ -64,19 +64,56 @@ header {
     top: 20px;
 }
 
-        /* banner da pagina */
+        /* área para contato */
 
-.banner img {
+.contato {
+    padding: 40px;
+    text-align: center;
+  }
+  
+ 
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  
+  input, textarea {
+    margin: 10px 0;
+    padding: 10px;
     width: 100%;
-    height: auto;
-}
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000; 
+  }
+  
 
-        /* informaçoes sobre prevençao */
+  button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
 
-.titulo{
+  button:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+  }
+
+/* informações de contato */
+
+  .titulo{
     padding: 20px;
     margin-left : 15% ;
-    margin-top: 2%;
+    margin-top: 3%;
     font-size: larger;
     color: #000000;
 }
@@ -95,26 +132,7 @@ p{
     padding: 1em; 
 }
 
-.infografico img {
-    width: 100%;
-    height: auto;
-    max-width: 750px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    margin: 0 auto; 
-    display: block; 
-}
-
-.descriçao {
-    margin: 0 auto; 
-    max-width: 800px; 
-    width: 90%; 
-    padding: 0em; 
-    font-weight: bolder;
-    text-align: center; 
-}
-
-        /* responsividade */
+/* responsividade */
 
 @media (max-width: 768px) {
     .navbar ul {
@@ -139,11 +157,6 @@ p{
         display: block;
     }
 
-
-    .banner img {
-        height: auto; 
-    }
-
     .titulo {
         margin-left: 5%; 
         margin-right: 5%; 
@@ -159,11 +172,15 @@ p{
         font-size: 100%; 
     }
 
-    .descricao {
-        margin-left: 5%; 
-        margin-right: 5%;
+    input, textarea {
+        max-width: 100%; 
+    }
+      
+      button {
+        padding: 10px 15px; 
     }
 }
+
 
 @media (max-width: 480px) {
     .navbar ul li a {
@@ -185,11 +202,21 @@ p{
         font-size: 95%; 
     }
 
-    .paragrafo {
+    .paragrafo{
         margin-left: 3%; 
         margin-right: 3%;
     }
-    .descricao {
-        width: 95%;
+
+    form {
+        max-width: 100%; 
+    }
+    
+      input, textarea {
+        max-width: 100%; 
+    }
+    
+      button {
+        width: 100%; 
+        padding: 12px; 
     }
 }
