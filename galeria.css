@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -19,8 +20,7 @@ header {
     padding: 10px 0;
     text-align: center;
 }
-
-    /* barra de navegação */
+         /* barra de navegação */
 
 .navbar ul {
     list-style: none;
@@ -51,7 +51,7 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: #ff6347;
+    color: #fa2a05;
 }
 
 .menu {
@@ -64,25 +64,19 @@ header {
     top: 20px;
 }
 
-.banner img {
-    width: 100%;
-    height: auto;
-}
-  
-        /* explicação */
+/* texto sobre a galeria */
 
 .titulo{
     padding: 20px;
     margin-left : 15% ;
     margin-top: 3%;
     font-size: larger;
-    color: #333;
+    color: #000000;
 }
 
 p{
     margin-bottom: 20px;
     font-size: 115%;
-    font-family:"Iberpangea", sans-serif ;
 
 }
 
@@ -91,36 +85,41 @@ p{
     margin-right: auto; 
     max-width: 800px; 
     width: 90%; 
-    padding: 1em;  
-    flex: 1; 
-    margin: 1em; 
-    max-width: 800px; 
-    width: 100%; 
-}
-
-.container {  
-    display: flex; 
-    flex-wrap: wrap; 
-    align-items: center; 
-    margin: 0 auto; 
-    max-width: 1200px; 
     padding: 1em; 
 }
 
-.imagensExemplo {
-    flex: 1; 
-    margin: 1em; 
-    max-width: 400px; 
-    width: 100%; 
+.exp li {
+    margin-left: 10%;
+    font-family:"Iberpangea", sans-serif;
+    margin-bottom: 22px;
+    font-size: 110%;
 }
 
-.imagensExemplo img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 8%;
-}
+        /* galeria das fotos */
 
-        /* responsividade */
+.galeriaFotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 5%;
+  }
+  
+  .galeriaFotos 
+  .fotos {
+    flex: 1 1 calc(25% - 20px); 
+    box-sizing: border-box;
+  }
+  
+  .galeriaFotos .fotos img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #f1171700;
+  }
+
+  /* responsividade */
 
 @media (max-width: 768px) {
     .navbar ul {
@@ -145,16 +144,14 @@ p{
         display: block;
     }
 
-    .banner img {
-        height: auto; 
-    }
     .titulo {
         margin-left: 5%; 
         margin-right: 5%; 
         font-size: 120%; 
     }
 
-    .paragrafo {
+    .paragrafo, 
+    .exp li {
         margin-left: 5%; 
         margin-right: 5%; 
     }
@@ -162,15 +159,13 @@ p{
     p {
         font-size: 100%; 
     }
-    .container {
-        flex-direction: column; 
-    }
 
-    .imagensExemplo{
-        width: auto;
+    .galeriaFotos 
+    .fotos {
+        flex: 1 1 calc(50% - 20px);
     }
-
 }
+
 
 @media (max-width: 480px) {
     .navbar ul li a {
@@ -191,9 +186,15 @@ p{
     p {
         font-size: 95%; 
     }
-    .container {
-        flex-direction: column; 
+
+    .paragrafo, 
+    .exp li {
+        margin-left: 3%; 
+        margin-right: 3%;
     }
 
-    
+    .galeriaFotos 
+    .fotos {
+        flex: 1 1 calc(100% - 20px);
+    }
 }

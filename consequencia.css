@@ -8,10 +8,10 @@
 body {
     font-family: "Iberpangea", sans-serif;
     background: rgb(247, 246, 246); 
-    background: linear-gradient(357deg, rgba(255,0,0,0.7259278711484594) 2%, rgba(255,205,0,0.865983893557423) 100%);
+    background:linear-gradient(357deg, rgba(0,144,0,0.8155637254901961) 2%, rgba(255,205,0,0.8323704481792717) 100%);
     margin: 0; 
     padding: 0; 
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 header {
@@ -96,7 +96,8 @@ p{
     padding: 1em; 
 }
 
-        /* grafico representando o aumento de focos de queimadas\[que negocio difícil, credo] */
+        /* grafico representando o aumento de focos de queimadas\[que negocio difícil, credo], baseado em estatisticas reais
+        na fonte do G1 mediante aos tempos hodiernos */
 
 .contGrafico { 
     width: 100%;
@@ -124,7 +125,7 @@ p{
 
 .valorBarra{
     height: 30px;
-    background-color: #1f8a92;
+    background-color: #a81b1b;
     color: white;
     text-align: center;
     line-height: 30px;

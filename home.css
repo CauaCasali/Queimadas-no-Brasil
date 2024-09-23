@@ -7,7 +7,11 @@
 
 body {
     font-family: "Iberpangea", sans-serif;
-    background-color: #1d811485;
+    background: rgb(247, 246, 246); 
+    background:linear-gradient(357deg, rgba(0,144,0,0.8155637254901961) 2%, rgba(255,205,0,0.8323704481792717) 100%);
+    margin: 0; 
+    padding: 0; 
+    min-height: 100vh;
 }
 
 header {
@@ -103,7 +107,7 @@ p{
     justify-content: space-between;
     flex-wrap: wrap; 
     margin: 20px auto;
-    max-width: 1200px; 
+    max-width: 1050px; 
 }
         
 .exemplo{
@@ -121,13 +125,13 @@ p{
     width: 100%;
     height: auto;
     max-width: 200px;
-    border: 2px solid #ccc;
+    border: 2px solid #b3000000;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
         
 .exemplo img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 /* responsividade */
