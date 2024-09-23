@@ -7,11 +7,7 @@
 
 body {
     font-family: "Iberpangea", sans-serif;
-    background: rgb(247, 246, 246); 
-    background:linear-gradient(357deg, rgba(0,144,0,0.8155637254901961) 2%, rgba(255,205,0,0.8323704481792717) 100%);
-    margin: 0; 
-    padding: 0; 
-    min-height: 100vh;
+    background: rgb(247, 246, 246);
 }
 
 header {
@@ -64,14 +60,20 @@ header {
     top: 20px;
 }
 
-/* texto sobre a galeria */
+.banner img {
+    width: 100%;
+    height: auto;
+}
+  
 
+        /* explicação das queimadas */
+ 
 .titulo{
     padding: 20px;
     margin-left : 15% ;
     margin-top: 3%;
     font-size: larger;
-    color: #000000;
+    color: #333;
 }
 
 p{
@@ -89,38 +91,46 @@ p{
 }
 
 .exp li {
-    margin-left: 10%;
+    margin-left: 21%;
     font-family:"Iberpangea", sans-serif;
     margin-bottom: 22px;
-    font-size: 110%;
 }
 
-        /* galeria das fotos */
+        /* mostrador das imagens das queimadas */
 
-.galeriaFotos {
+.container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px;
-    margin-left: 5%;
-  }
-  
-  .galeriaFotos 
-  .fotos {
-    flex: 1 1 calc(25% - 20px); 
-    box-sizing: border-box;
-  }
-  
-  .galeriaFotos 
-  .fotos img {
-    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin: 20px auto;
+    max-width: 1050px; 
+}
+        
+.exemplo{
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+        
+.exemplo h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+        
+.exemplo img {
+    width: 100%;
     height: auto;
+    max-width: 200px;
+    border: 2px solid #b3000000;
     border-radius: 8px;
-    border: 2px solid #f1171700;
-  }
+    transition: transform 0.3s ease-in-out;
+}
+        
+.exemplo img:hover {
+    transform: scale(1.1);
+}
 
-  /* responsividade */
+/* responsividade */
 
 @media (max-width: 768px) {
     .navbar ul {
@@ -145,6 +155,11 @@ p{
         display: block;
     }
 
+
+    .banner img {
+        height: auto; 
+    }
+    
     .titulo {
         margin-left: 5%; 
         margin-right: 5%; 
@@ -161,9 +176,13 @@ p{
         font-size: 100%; 
     }
 
-    .galeriaFotos 
-    .fotos {
-        flex: 1 1 calc(50% - 20px);
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exemplo img {
+        max-width: 90%;
     }
 }
 
@@ -194,8 +213,12 @@ p{
         margin-right: 3%;
     }
 
-    .galeriaFotos 
-    .fotos {
-        flex: 1 1 calc(100% - 20px);
+    .exemplo h2 {
+        font-size: 18px;
     }
+
+    .exemplo img {
+        max-width: 100%; 
+    }
+
 }

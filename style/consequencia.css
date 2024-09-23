@@ -8,10 +8,6 @@
 body {
     font-family: "Iberpangea", sans-serif;
     background: rgb(247, 246, 246); 
-    background:linear-gradient(357deg, rgba(0,144,0,0.8155637254901961) 2%, rgba(255,205,0,0.8323704481792717) 100%);
-    margin: 0; 
-    padding: 0; 
-    min-height: 100vh;
 }
 
 header {

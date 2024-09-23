@@ -2,15 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: "Iberpangea", sans-serif;
     background: rgb(247, 246, 246); 
-    background:linear-gradient(357deg, rgba(0,144,0,0.8155637254901961) 2%, rgba(255,205,0,0.8323704481792717) 100%);
-    margin: 0; 
-    padding: 0; 
-    min-height: 100vh;
 }
 
 header {
@@ -19,8 +16,7 @@ header {
     padding: 10px 0;
     text-align: center;
 }
-
-    /* barra de navegação */
+         /* barra de navegação */
 
 .navbar ul {
     list-style: none;
@@ -51,7 +47,7 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: #ff6347;
+    color: #fa2a05;
 }
 
 .menu {
@@ -64,25 +60,26 @@ header {
     top: 20px;
 }
 
+        /* banner da pagina */
+
 .banner img {
     width: 100%;
     height: auto;
 }
-  
-        /* explicação */
+
+        /* informaçoes sobre prevençao */
 
 .titulo{
     padding: 20px;
     margin-left : 15% ;
-    margin-top: 3%;
+    margin-top: 2%;
     font-size: larger;
-    color: #333;
+    color: #000000;
 }
 
 p{
     margin-bottom: 20px;
     font-size: 115%;
-    font-family:"Iberpangea", sans-serif ;
 
 }
 
@@ -91,33 +88,26 @@ p{
     margin-right: auto; 
     max-width: 800px; 
     width: 90%; 
-    padding: 1em;  
-    flex: 1; 
-    margin: 1em; 
-    max-width: 800px; 
-    width: 100%; 
-}
-
-.container {  
-    display: flex; 
-    flex-wrap: wrap; 
-    align-items: center; 
-    margin: 0 auto; 
-    max-width: 1200px; 
     padding: 1em; 
 }
 
-.imagensExemplo {
-    flex: 1; 
-    margin: 1em; 
-    max-width: 400px; 
-    width: 100%; 
+.infografico img {
+    width: 100%;
+    height: auto;
+    max-width: 750px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 0 auto; 
+    display: block; 
 }
 
-.imagensExemplo img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 8%;
+.descriçao {
+    margin: 0 auto; 
+    max-width: 800px; 
+    width: 90%; 
+    padding: 0em; 
+    font-weight: bolder;
+    text-align: center; 
 }
 
         /* responsividade */
@@ -145,16 +135,18 @@ p{
         display: block;
     }
 
+
     .banner img {
         height: auto; 
     }
+
     .titulo {
         margin-left: 5%; 
         margin-right: 5%; 
         font-size: 120%; 
     }
 
-    .paragrafo {
+    .paragrafo{
         margin-left: 5%; 
         margin-right: 5%; 
     }
@@ -162,14 +154,11 @@ p{
     p {
         font-size: 100%; 
     }
-    .container {
-        flex-direction: column; 
-    }
 
-    .imagensExemplo{
-        width: auto;
+    .descricao {
+        margin-left: 5%; 
+        margin-right: 5%;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -191,9 +180,12 @@ p{
     p {
         font-size: 95%; 
     }
-    .container {
-        flex-direction: column; 
-    }
 
-    
+    .paragrafo {
+        margin-left: 3%; 
+        margin-right: 3%;
+    }
+    .descricao {
+        width: 95%;
+    }
 }
